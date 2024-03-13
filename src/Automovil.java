@@ -1,9 +1,9 @@
 public class Automovil {
-    String fabricante;
-    String modelo;
-    String color;
-    double cilindrada;
-    int capacidadEstanque = 40;
+    private String fabricante;
+    private String modelo;
+    private String color;
+    private double cilindrada;
+    private int capacidadEstanque = 40;
 
     public String verDetalle(){
         return "auto.fabricante = " + this.fabricante +
@@ -11,6 +11,46 @@ public class Automovil {
                 "\nauto.color = " + this.color +
                 "\nauto.cilindrada = " + this.cilindrada;
 
+    }
+    
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public double getCilindrada() {
+        return cilindrada;
+    }
+
+    public int getCapacidadEstanque() {
+        return capacidadEstanque;
+    }
+    
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setCilindrada(double cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    public void setCapacidadEstanque(int capacidadEstanque) {
+        this.capacidadEstanque = capacidadEstanque;
     }
 
     public String acelerar(int rpm){
