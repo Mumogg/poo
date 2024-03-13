@@ -10,14 +10,16 @@ public class EjemploAutomovil {
         "Blanco", 
         3.0);
     
-
+        Automovil nissan = new Automovil("Nissan", "Navara", "Gris oscuro");
 
         System.out.println(mazda.verDetalle());
         System.out.println(subaru.verDetalle());
+        System.out.println(nissan.verDetalle());
         System.out.println(subaru.acelerar(3000));
         System.out.println(subaru.frenar());
         System.out.println(mazda.acelerarFrenar(3000));
 
         System.out.println("kilometros por litro " + subaru.calcularConsumo(300, 0.75f));
+        System.out.println();
     }
 }

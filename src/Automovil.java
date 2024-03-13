@@ -14,12 +14,42 @@ public class Automovil {
     }
 
     
+    
+    public Automovil() {
+    }
+
+    
+
+    public Automovil(String fabricante, String modelo) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+    }
+
+    
+
+    public Automovil(String fabricante, String modelo, String color) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+    }
+
+    
 
     public Automovil(String fabricante, String modelo, String color, double cilindrada) {
         this.fabricante = fabricante;
         this.modelo = modelo;
         this.color = color;
         this.cilindrada = cilindrada;
+    }
+
+
+
+    public Automovil(String fabricante, String modelo, String color, double cilindrada, int getCapacidadEstanque) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.cilindrada = cilindrada;
+        this.capacidadEstanque = capacidadEstanque;
     }
 
 
