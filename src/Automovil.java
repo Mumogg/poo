@@ -235,4 +235,16 @@ public class Automovil implements Comparable<Automovil>{
     public int compareTo(Automovil a) {
         return this.fabricante.compareTo(a.fabricante);
     }
+
+
+
+    @Override
+    public boolean equals(Object obj) {
+        Automovil a = (Automovil) obj;
+        return (this.fabricante != null && this.modelo != null &&
+            this.fabricante.equals(a.getFabricante()) 
+        && this.modelo.equals(a.getModelo()));
+    }
+
+    
 }
