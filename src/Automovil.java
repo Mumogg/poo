@@ -12,7 +12,18 @@ public class Automovil {
                 "\nauto.cilindrada = " + this.cilindrada;
 
     }
+
     
+
+    public Automovil(String fabricante, String modelo, String color, double cilindrada) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.cilindrada = cilindrada;
+    }
+
+
+
     public String getFabricante() {
         return fabricante;
     }
@@ -32,7 +43,7 @@ public class Automovil {
     public int getCapacidadEstanque() {
         return capacidadEstanque;
     }
-    
+
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
